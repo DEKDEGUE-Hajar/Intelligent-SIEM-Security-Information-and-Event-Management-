@@ -13,7 +13,7 @@ Développer un système intelligent capable de détecter et classifier les attaq
 
 ## 🧠 Architecture du système
 
-![Architecture SIEM](<img width="545" alt="image" src="https://github.com/user-attachments/assets/00ce53ea-0a34-46b9-af8d-a7b8418fdbdc" />
+![Architecture SIEM](images/siem_architecture.png)![siem archi](https://github.com/user-attachments/assets/0058aa43-9c06-4597-a92a-3133d876b2eb)
 )
 
 ---
