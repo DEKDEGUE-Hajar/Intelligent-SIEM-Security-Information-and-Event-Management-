@@ -1,6 +1,24 @@
 # 📡 AI-Based SIEM - Intrusion Detection System
 
+---
+## 📖 Project Overview
 Détection automatique d’intrusions réseau en temps réel, intégrée dans une architecture SIEM avec déploiement API et pipeline ELK.
+
+---
+
+
+
+## 🌟 Features
+- Real-time detection and classification of network attacks
+- RESTful API for model inference
+- Support for multiple attack types
+- Dashboard for visual analytics
+- Automated incident response integration with Wazuh
+
+---
+
+## 🗃️ Dataset
+We use the [CICIDS2017 Dataset](https://www.unb.ca/cic/datasets/ids-2017.html), which includes both benign and attack traffic types such as DDoS, PortScan, Bot, BruteForce, Web Attack, and more.
 
 ---
 
@@ -14,6 +32,17 @@ Développer un système intelligent capable de détecter et classifier les attaq
 
 > ⚠️ Ce dépôt contient uniquement le **modèle de détection** et le **pipeline de prétraitement**.  
 > L’infrastructure complète SIEM (déploiement API + intégration ELK) est décrite ci-dessous à titre informatif, mais n’est **pas incluse** dans ce repository.
+
+The system is composed of the following components:
+
+- **Logstash**: Ingests and preprocesses log data
+- **Elasticsearch**: Stores and indexes logs for fast querying
+- **Kibana**: Visualizes the logs and predictions in real time
+- **Flask API**: Exposes the trained ML model for prediction
+- **Wazuh**: Acts as the SOAR component for automated response
+- **ML Models**: Includes XGBoost, LightGBM, Random Forest, and ensemble techniques
+
+---
 
 ![Architecture SIEM](https://github.com/user-attachments/assets/0058aa43-9c06-4597-a92a-3133d876b2eb)
 
