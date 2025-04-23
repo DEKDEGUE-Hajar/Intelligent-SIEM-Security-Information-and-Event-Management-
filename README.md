@@ -1,5 +1,4 @@
-
-# 📡 AI based SIEM - Intrusion Detection System
+# 📡 AI-Based SIEM - Intrusion Detection System
 
 Détection automatique d’intrusions réseau en temps réel, intégrée dans une architecture SIEM avec déploiement API et pipeline ELK.
 
@@ -13,8 +12,10 @@ Développer un système intelligent capable de détecter et classifier les attaq
 
 ## 🧠 Architecture du système
 
-(images/siem_architecture.png)![siem archi](https://github.com/user-attachments/assets/0058aa43-9c06-4597-a92a-3133d876b2eb)
+> ⚠️ Ce dépôt contient uniquement le **modèle de détection** et le **pipeline de prétraitement**.  
+> L’infrastructure complète SIEM (déploiement API + intégration ELK) est décrite ci-dessous à titre informatif, mais n’est **pas incluse** dans ce repository.
 
+![Architecture SIEM](https://github.com/user-attachments/assets/0058aa43-9c06-4597-a92a-3133d876b2eb)
 
 ---
 
@@ -23,16 +24,16 @@ Développer un système intelligent capable de détecter et classifier les attaq
 - **Prétraitement du dataset CIC-IDS2017** : nettoyage, normalisation, réduction dimensionnelle (PCA), sur-échantillonnage (SMOTE), regroupement des classes.
 - **Modélisation** : Implémentation de l’algorithme *Triboost* (XGBoost + LightGBM + Random Forest).
 - **Optimisation** : Sélection du meilleur modèle pour chaque type d’attaque selon le F1-score.
-- **Déploiement** : Exposition du modèle via une API REST (Flask).
-- **Intégration** : Ingestion des alertes dans le pipeline Logstash, visualisation avec Kibana.
+- **Déploiement (hors repo)** : Exposition du modèle via une API REST développée avec Flask.
+- **Intégration (hors repo)** : Ingestion des prédictions dans le pipeline Logstash, stockage dans Elasticsearch, visualisation via Kibana.
 
 ---
 
 ## 🛠️ Technologies utilisées
 
 - **Langages & Librairies** : Python, Scikit-learn, XGBoost, LightGBM, SMOTE, PCA
-- **Backend** : Flask API
-- **SIEM Stack** : Logstash, Elasticsearch, Kibana
+- **Backend** : Flask API (non inclus dans ce repo)
+- **SIEM Stack** : Logstash, Elasticsearch, Kibana (non inclus dans ce repo)
 - **Outils** : Git, Postman
 
 ---
@@ -41,5 +42,11 @@ Développer un système intelligent capable de détecter et classifier les attaq
 
 - Détection multi-classes avec un F1-score > 92% sur les attaques principales
 - Intégration en temps réel dans une stack ELK pour visualisation et alerting
+
+---
+
+## 📁 Lien GitHub
+
+🔗 [https://github.com/AjarHDK/Network-Intrusion-Detection](https://github.com/AjarHDK/Network-Intrusion-Detection)
 
 ---
