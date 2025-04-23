@@ -1,5 +1,5 @@
 
-# 📡 SIEM-Based Intrusion Detection System
+# 📡 AI based SIEM - Intrusion Detection System
 
 Détection automatique d’intrusions réseau en temps réel, intégrée dans une architecture SIEM avec déploiement API et pipeline ELK.
 
