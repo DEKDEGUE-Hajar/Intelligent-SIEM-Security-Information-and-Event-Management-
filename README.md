@@ -47,6 +47,6 @@ Développer un système intelligent capable de détecter et classifier les attaq
 
 ## 📁 Lien GitHub
 
-🔗 [https://github.com/AjarHDK/Network-Intrusion-Detection](https://github.com/AjarHDK/Network-Intrusion-Detection)
+🔗 [https://github.com/AjarHDK/Network-Intrusion-Detection]([https://github.com/AjarHDK/Network-Intrusion-Detection](https://github.com/DEKDEGUE-Hajar/Intelligent-SIEM-Security-Information-and-Event-Management-))
 
 ---
